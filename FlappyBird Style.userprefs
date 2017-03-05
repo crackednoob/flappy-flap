@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Main Menu\Scripts\ShowPanels.cs">
+    <Files>
+      <File FileName="Assets\Script\Bird.cs" Line="11" Column="2" />
+      <File FileName="Assets\Script\GameController.cs" Line="60" Column="64" />
+      <File FileName="Assets\Script\Egg.cs" Line="8" Column="1" />
+      <File FileName="Assets\Script\Obstacle.cs" Line="17" Column="18" />
+      <File FileName="Assets\Script\EggPool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ObstaclePool.cs" Line="32" Column="58" />
+      <File FileName="Assets\Main Menu\Scripts\ShowPanels.cs" Line="40" Column="31" />
+      <File FileName="Assets\Script\Player.cs" Line="16" Column="19" />
+      <File FileName="Assets\Main Menu\Scripts\StartOptions.cs" Line="70" Column="58" />
+      <File FileName="Assets\Main Menu\Scripts\MultiplayerStartOptions.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
