@@ -12,7 +12,7 @@ public class ObstaclePool : MonoBehaviour {
 
 	private GameObject[] obstacle;
 	private Vector2 objectPoolPosition = new Vector2(-15f, -25f);
-	private float timeSinceLastSpawn;
+	private float timeSinceLastSpawn = 4f;
 	private float spawnXPosition = 12f;
 	private int currentObstacle = 0;
 
@@ -29,8 +29,6 @@ public class ObstaclePool : MonoBehaviour {
 	void Update()
 	{
 		timeSinceLastSpawn += Time.deltaTime;
-		if (GameObject.FindGameObjectWithTag("Player") == null)
-			return;
 
 		if(GameController.instance.gameOver == false && timeSinceLastSpawn >= spawnRate)
 		{

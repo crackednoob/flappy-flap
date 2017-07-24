@@ -40,7 +40,6 @@ public class GameController : MonoBehaviour {
 		if (gameOver == true && Input.GetButtonDown ("Fire1")) {
 			PlayerPrefs.SetInt ("Dead", 0);
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-			MultiplayerManager.manager.StopHost ();
 		}
 	}
 

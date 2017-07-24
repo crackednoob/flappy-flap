@@ -14,17 +14,12 @@ public class Egg : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D coll)
 	{
-		if (coll.GetComponent<Bird> () != null || coll.GetComponent<BirdMultiplayer>() != null  && GameController.instance.gameOver == false) {
+		if (coll.CompareTag("Player") == true && GameController.instance.gameOver == false) {
 			GameController.instance.BirdScored ();
-			this.transform.position = reset;
+			transform.position = reset;
 			audio.Play ();
-		}
-	}
-
-	private void OnTriggerStay2D(Collider2D coll)
-	{
-		if (coll.GetComponent<Obstacle> () != null) {
-			this.transform.position = new Vector2 (transform.position.x + 2f, transform.position.y);
+		}else if (coll.CompareTag("Obstacle")) {
+			transform.position = new Vector2 (transform.position.x + 2f, transform.position.y);
 		}
 	}
 }

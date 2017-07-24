@@ -28,13 +28,10 @@ public class EggPool : MonoBehaviour {
 	}
 
 	void Update()
-	{
-		if (GameObject.FindGameObjectWithTag ("Player") == null)
-			return;
-		
+	{		
 		timeSinceLastSpawn += Time.deltaTime;
 
-		if(GameController.instance.gameOver == false && timeSinceLastSpawn >= spawnRate)
+		if(timeSinceLastSpawn >= spawnRate && GameController.instance.gameOver == false )
 		{
 			timeSinceLastSpawn = 0;
 			float spawnYPosition = Random.Range (eggMin, eggMax);

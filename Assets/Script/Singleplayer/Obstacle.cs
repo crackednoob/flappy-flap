@@ -12,10 +12,8 @@ public class Obstacle : MonoBehaviour {
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.GetComponent<Bird> () != null || other.GetComponent<BirdMultiplayer>() !=null ) {
+		if (other.CompareTag("Player") ) {
 			GameController.instance.BirdScored ();
-			if(GameObject.FindGameObjectWithTag("Network"))
-				MultiplayerController.instance.BirdScored ();
 			audio.Play ();
 		}
 	}

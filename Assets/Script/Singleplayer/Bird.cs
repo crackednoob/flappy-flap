@@ -19,9 +19,9 @@ public class Bird : MonoBehaviour {
 		PlayerPrefs.SetInt ("Pause", 0);
 	}
 
-	void Update () {
-		if (isDead == false && PlayerPrefs.GetInt("Pause") == 0) {
-			if(Input.GetButtonDown("Fire1")){
+	void FixedUpdate () {
+		if (Input.GetButtonDown("Fire1")) {
+			if(isDead == false && PlayerPrefs.GetInt("Pause") == 0){
 				rb2d.velocity = Vector2.zero;
 				rb2d.AddForce (new Vector2(0, upForce));
 				anim.SetTrigger ("Flap");
